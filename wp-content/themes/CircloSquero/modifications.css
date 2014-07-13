@@ -1,0 +1,49 @@
+/* Add spacing to Time URL in Twitter feed */
+li.widgetFooter ul.tweets li a.timesince {
+	margin-left: 10px;
+}
+
+/* Increase click target in sidebar */
+.sidebarRight ul li ul li {
+	padding: 0 !important;
+}
+.sidebarRight ul li ul li a {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+/* Hide Author info in Blog */
+.authorMeta, #aboutAuthor, .afterAboutAuthor {
+	display: none;
+}
+
+/* Resize Get-Quote text */
+.oneThirdLast .infobox6 p {
+	font: 27px 'SansationBold',sans-serif !important;
+}
+
+/* Make links on homepage darker */
+.h2Blue a {
+	color: #2E9CD1 !important
+}
+
+/* Hide breadcrumbs because they don't work properly */
+.breadcrumbs {
+	display: none;
+}
+
+/* Spacing between paragraphs */
+.contentWrap p {
+	margin-bottom: 10px;
+}
+
+/* Get rid of comments div on non-blog pages */
+.singlePostCS_FW #comments {
+	display: none !important;
+}
+
+/*.smallbutton {
+	display: none !important;
+}*/

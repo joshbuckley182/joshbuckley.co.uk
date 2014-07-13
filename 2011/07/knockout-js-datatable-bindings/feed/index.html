@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+		>
+<channel>
+	<title>Comments on: Knockout.js DataTable bindings</title>
+	<atom:link href="http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/</link>
+	<description>Josh Buckley</description>
+	<lastBuildDate>Fri, 08 Jun 2012 23:50:19 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=208</generator>
+	<item>
+		<title>By: Leigh Harrison</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-457</link>
+		<dc:creator>Leigh Harrison</dc:creator>
+		<pubDate>Fri, 08 Jun 2012 23:50:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-457</guid>
+		<description>This is a wonderful binding; it&#039;s lightweight but effective. However, I cannot get it work with two dimensional data arrays such as this.
+
+  function users(one, two three){
+    this.one = ko.observable(one);
+    this.two = ko.observable(two); 
+    this.three = ko.observable(three);
+  }
+
+I&#039;m sure I&#039;m simply failing to grasp the paradigm, but I&#039;d give a lot for a simple example of column population by key instead of index.</description>
+		<content:encoded><![CDATA[<p>This is a wonderful binding; it&#8217;s lightweight but effective. However, I cannot get it work with two dimensional data arrays such as this.</p>
+<p>  function users(one, two three){<br />
+    this.one = ko.observable(one);<br />
+    this.two = ko.observable(two);<br />
+    this.three = ko.observable(three);<br />
+  }</p>
+<p>I&#8217;m sure I&#8217;m simply failing to grasp the paradigm, but I&#8217;d give a lot for a simple example of column population by key instead of index.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Lucas Martin</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-66</link>
+		<dc:creator>Lucas Martin</dc:creator>
+		<pubDate>Fri, 09 Dec 2011 00:59:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-66</guid>
+		<description>Heya Josh,
+
+Your blog post inspired me to create a pretty fully featured databinding in knockout js that integrates with datatables.  If you&#039;re interested you can check it out at: https://github.com/CogShift/Knockout.Extensions
+
+With a demo&#039;s at: http://jsfiddle.net/ducka/fPaQs/ and http://jsfiddle.net/ducka/haq2y/
+
+Cheers!</description>
+		<content:encoded><![CDATA[<p>Heya Josh,</p>
+<p>Your blog post inspired me to create a pretty fully featured databinding in knockout js that integrates with datatables.  If you&#8217;re interested you can check it out at: <a href="https://github.com/CogShift/Knockout.Extensions" rel="nofollow">https://github.com/CogShift/Knockout.Extensions</a></p>
+<p>With a demo&#8217;s at: <a href="http://jsfiddle.net/ducka/fPaQs/" rel="nofollow">http://jsfiddle.net/ducka/fPaQs/</a> and <a href="http://jsfiddle.net/ducka/haq2y/" rel="nofollow">http://jsfiddle.net/ducka/haq2y/</a></p>
+<p>Cheers!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Allan</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-52</link>
+		<dc:creator>Allan</dc:creator>
+		<pubDate>Tue, 22 Nov 2011 12:00:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-52</guid>
+		<description>Its not so much of a complete regen as a rearrangement. The elements in the TBODY that can be reused are (i.e. the TR elements are held in a Javascript variable and appended to the table&#039;s body as required). As such, any static events or properties assigned to the nodes are retained, since it isn&#039;t actually creating a new node (unless of course you are adding a new row).</description>
+		<content:encoded><![CDATA[<p>Its not so much of a complete regen as a rearrangement. The elements in the TBODY that can be reused are (i.e. the TR elements are held in a Javascript variable and appended to the table&#8217;s body as required). As such, any static events or properties assigned to the nodes are retained, since it isn&#8217;t actually creating a new node (unless of course you are adding a new row).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Josh</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-51</link>
+		<dc:creator>Josh</dc:creator>
+		<pubDate>Mon, 21 Nov 2011 00:02:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-51</guid>
+		<description>Hi Niklas,
+
+Sorry about the delay in replying!
+
+You should be able to supply any data that is accepted by DataTables&#039; fnAddData() method (see http://datatables.net/api). It states that you can supply either Arrays or Objects - I&#039;ve just had a quick try with objects but the table wouldn&#039;t render, not sure why though. 
+
+Maybe you&#039;ll be able to find something useful on the API page above. If you do, let me know!</description>
+		<content:encoded><![CDATA[<p>Hi Niklas,</p>
+<p>Sorry about the delay in replying!</p>
+<p>You should be able to supply any data that is accepted by DataTables&#8217; fnAddData() method (see <a href="http://datatables.net/api" rel="nofollow">http://datatables.net/api</a>). It states that you can supply either Arrays or Objects &#8211; I&#8217;ve just had a quick try with objects but the table wouldn&#8217;t render, not sure why though. </p>
+<p>Maybe you&#8217;ll be able to find something useful on the API page above. If you do, let me know!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Josh</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-50</link>
+		<dc:creator>Josh</dc:creator>
+		<pubDate>Sun, 20 Nov 2011 23:54:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-50</guid>
+		<description>Hi Orson,
+
+The paging doesn&#039;t appear on my demo as I&#039;ve only styled the table - not the entire datatable. If I had referenced the full datatables CSS, the Prev/Next buttons would be visible. 
+
+To check this, you can use Firebug to inspect the generated table. There will be 2 DIVs in the same level as the table - one with a class &quot;dataTables_info&quot; which is the &quot;Showing 1 to 10 of...&quot; description, and another with a class &quot;dataTables_paginate paging_two_button&quot;. Inside this DIV are two more, which are the Prev/Next buttons. 
+
+Hope that helps!</description>
+		<content:encoded><![CDATA[<p>Hi Orson,</p>
+<p>The paging doesn&#8217;t appear on my demo as I&#8217;ve only styled the table &#8211; not the entire datatable. If I had referenced the full datatables CSS, the Prev/Next buttons would be visible. </p>
+<p>To check this, you can use Firebug to inspect the generated table. There will be 2 DIVs in the same level as the table &#8211; one with a class &#8220;dataTables_info&#8221; which is the &#8220;Showing 1 to 10 of&#8230;&#8221; description, and another with a class &#8220;dataTables_paginate paging_two_button&#8221;. Inside this DIV are two more, which are the Prev/Next buttons. </p>
+<p>Hope that helps!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Orson</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-48</link>
+		<dc:creator>Orson</dc:creator>
+		<pubDate>Thu, 17 Nov 2011 10:46:25 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-48</guid>
+		<description>Paging doesn&#039;t work without the &quot;bJQueryUI&quot; option activated. Is there a way i could have my paging working without the options set to true?</description>
+		<content:encoded><![CDATA[<p>Paging doesn&#8217;t work without the &#8220;bJQueryUI&#8221; option activated. Is there a way i could have my paging working without the options set to true?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Niklas Pettersson</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-34</link>
+		<dc:creator>Niklas Pettersson</dc:creator>
+		<pubDate>Mon, 19 Sep 2011 13:54:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-34</guid>
+		<description>Nice job!
+
+I have a question about how we can data-bind to a object data model that looks like [{&quot;id&quot;:1, &quot;name&quot; : &quot;Josh&quot;}, {...}] instead of the example data model [&quot;data1&quot;, &quot;data2&quot;] ?</description>
+		<content:encoded><![CDATA[<p>Nice job!</p>
+<p>I have a question about how we can data-bind to a object data model that looks like [{"id":1, "name" : "Josh"}, {...}] instead of the example data model ["data1", "data2"] ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kevin Turner</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-24</link>
+		<dc:creator>Kevin Turner</dc:creator>
+		<pubDate>Wed, 03 Aug 2011 19:56:34 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-24</guid>
+		<description>I&#039;m very happy to see someone digging in to this.  When I was looking at data-binding frameworks, this was a big concern of mine; data binding looked great for many cases, but what about those where I&#039;m throwing a lot of things around with datatables?
+I still haven&#039;t used Knockout in Real Life yet, but we&#039;re strongly considering it for some projects on the table right now, and seeing how this works will help.</description>
+		<content:encoded><![CDATA[<p>I&#8217;m very happy to see someone digging in to this.  When I was looking at data-binding frameworks, this was a big concern of mine; data binding looked great for many cases, but what about those where I&#8217;m throwing a lot of things around with datatables?<br />
+I still haven&#8217;t used Knockout in Real Life yet, but we&#8217;re strongly considering it for some projects on the table right now, and seeing how this works will help.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Josh</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-23</link>
+		<dc:creator>Josh</dc:creator>
+		<pubDate>Sun, 31 Jul 2011 09:42:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-23</guid>
+		<description>Yes, you’re correct, but unfortunately the table regen seems to be a limitation of DataTables itself - their own “Add Row” example shows the entire tbody being regenerated. If you inspect it in Firebug, then add a row, Firebug gives it a yellow highlight to indicate a dom change. (http://www.datatables.net/release-datatables/examples/api/add_row.html).
+
+Glad you’ve found it useful though!</description>
+		<content:encoded><![CDATA[<p>Yes, you’re correct, but unfortunately the table regen seems to be a limitation of DataTables itself &#8211; their own “Add Row” example shows the entire tbody being regenerated. If you inspect it in Firebug, then add a row, Firebug gives it a yellow highlight to indicate a dom change. (<a href="http://www.datatables.net/release-datatables/examples/api/add_row.html" rel="nofollow">http://www.datatables.net/release-datatables/examples/api/add_row.html</a>).</p>
+<p>Glad you’ve found it useful though!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kevin Dangoor</title>
+		<link>http://www.joshbuckley.co.uk/2011/07/knockout-js-datatable-bindings/#comment-21</link>
+		<dc:creator>Kevin Dangoor</dc:creator>
+		<pubDate>Sun, 31 Jul 2011 04:01:47 +0000</pubDate>
+		<guid isPermaLink="false">http://www.joshbuckley.co.uk/?p=718#comment-21</guid>
+		<description>Very nice to see this! I&#039;m a big fan of both declarative binding and DataTables, and I was just looking at Knockout. The only drawback I see to this plugin is that it appears that the entire table is regenerated for every change, rather than just adding/removing rows. Am I reading that correctly?
+
+As someone just looking at Knockout, this was my first introduction to custom bindings, so this was a helpful example. Thanks!</description>
+		<content:encoded><![CDATA[<p>Very nice to see this! I&#8217;m a big fan of both declarative binding and DataTables, and I was just looking at Knockout. The only drawback I see to this plugin is that it appears that the entire table is regenerated for every change, rather than just adding/removing rows. Am I reading that correctly?</p>
+<p>As someone just looking at Knockout, this was my first introduction to custom bindings, so this was a helpful example. Thanks!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
