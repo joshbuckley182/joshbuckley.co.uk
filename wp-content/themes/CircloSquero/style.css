@@ -112,7 +112,7 @@ a.mediumbutton:hover, a.smallbutton:hover {
 	width: 980px;
 	margin: 0 auto;
 	position: relative;
-	top: 50px;
+	top: 90px;
 
 }
 
@@ -1398,3 +1398,15 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 #respond, .comm_reply_box { display: none; }
+.wrapper:before {
+	content: "Sorry, but I'm currently not accepting new projects";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+
+	background: rgb(26, 226, 26);
+    padding: 10px;
+    text-align: center;
+}
